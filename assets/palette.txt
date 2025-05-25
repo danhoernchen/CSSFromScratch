@@ -1,0 +1,88 @@
+/* Coolors Exported Palette - https://coolors.co/c67838-031926-839788-a71d31-14591d */
+
+- Tailwind
+
+{ 'caramel': { DEFAULT: '#c67838', 100: '#28180b', 200: '#503016', 300: '#774822', 400: '#9f602d', 500: '#c67838', 600: '#d29360', 700: '#ddae88', 800: '#e9c9af', 900: '#f4e4d7' }, 'rich_black': { DEFAULT: '#031926', 100: '#010508', 200: '#010a0f', 300: '#020f17', 400: '#02141e', 500: '#031926', 600: '#0a537d', 700: '#118cd3', 800: '#51b6f1', 900: '#a8dbf8' }, 'cambridge_blue': { DEFAULT: '#839788', 100: '#1a1f1b', 200: '#333d36', 300: '#4d5c50', 400: '#667a6b', 500: '#839788', 600: '#9bab9f', 700: '#b4c0b7', 800: '#cdd5cf', 900: '#e6eae7' }, 'madder': { DEFAULT: '#a71d31', 100: '#21060a', 200: '#420c14', 300: '#63111e', 400: '#841728', 500: '#a71d31', 600: '#d92843', 700: '#e35e72', 800: '#ec93a1', 900: '#f6c9d0' }, 'cal_poly_green': { DEFAULT: '#14591d', 100: '#041106', 200: '#08230c', 300: '#0c3411', 400: '#104617', 500: '#14591d', 600: '#239932', 700: '#3ad24e', 800: '#7ce189', 900: '#bdf0c4' } }
+
+- CSV
+
+c67838,031926,839788,a71d31,14591d
+
+- With #
+
+#c67838, #031926, #839788, #a71d31, #14591d
+
+- Array
+
+["c67838","031926","839788","a71d31","14591d"]
+
+- Object
+
+{"Caramel":"c67838","Rich black":"031926","Cambridge blue":"839788","Madder":"a71d31","Cal Poly green":"14591d"}
+
+- Extended Array
+
+[{"name":"Caramel","hex":"c67838","rgb":[198,120,56],"cmyk":[0,39,72,22],"hsb":[27,72,78],"hsl":[27,56,50],"lab":[58,25,47]},{"name":"Rich black","hex":"031926","rgb":[3,25,38],"cmyk":[92,34,0,85],"hsb":[202,92,15],"hsl":[202,85,8],"lab":[8,-3,-12]},{"name":"Cambridge blue","hex":"839788","rgb":[131,151,136],"cmyk":[13,0,10,41],"hsb":[135,13,59],"hsl":[135,9,55],"lab":[61,-10,6]},{"name":"Madder","hex":"a71d31","rgb":[167,29,49],"cmyk":[0,83,71,35],"hsb":[351,83,65],"hsl":[351,70,38],"lab":[37,55,25]},{"name":"Cal Poly green","hex":"14591d","rgb":[20,89,29],"cmyk":[78,0,67,65],"hsb":[128,78,35],"hsl":[128,63,21],"lab":[33,-35,28]}]
+
+- XML
+
+<palette>
+  <color name="Caramel" hex="c67838" r="198" g="120" b="56" />
+  <color name="Rich black" hex="031926" r="3" g="25" b="38" />
+  <color name="Cambridge blue" hex="839788" r="131" g="151" b="136" />
+  <color name="Madder" hex="a71d31" r="167" g="29" b="49" />
+  <color name="Cal Poly green" hex="14591d" r="20" g="89" b="29" />
+</palette>
+
+:root {
+  --clr-caramel-DEFAULT: #c67838;
+  --clr-caramel-100: #28180b;
+  --clr-caramel-200: #503016;
+  --clr-caramel-300: #774822;
+  --clr-caramel-400: #9f602d;
+  --clr-caramel-500: #c67838;
+  --clr-caramel-600: #d29360;
+  --clr-caramel-700: #ddae88;
+  --clr-caramel-800: #e9c9af;
+  --clr-caramel-900: #f4e4d7;
+  --clr-rich_black-DEFAULT: #031926;
+  --clr-rich_black-100: #010508;
+  --clr-rich_black-200: #010a0f;
+  --clr-rich_black-300: #020f17;
+  --clr-rich_black-400: #02141e;
+  --clr-rich_black-500: #031926;
+  --clr-rich_black-600: #0a537d;
+  --clr-rich_black-700: #118cd3;
+  --clr-rich_black-800: #51b6f1;
+  --clr-rich_black-900: #a8dbf8;
+  --clr-cambridge_blue-DEFAULT: #839788;
+  --clr-cambridge_blue-100: #1a1f1b;
+  --clr-cambridge_blue-200: #333d36;
+  --clr-cambridge_blue-300: #4d5c50;
+  --clr-cambridge_blue-400: #667a6b;
+  --clr-cambridge_blue-500: #839788;
+  --clr-cambridge_blue-600: #9bab9f;
+  --clr-cambridge_blue-700: #b4c0b7;
+  --clr-cambridge_blue-800: #cdd5cf;
+  --clr-cambridge_blue-900: #e6eae7;
+  --clr-madder-DEFAULT: #a71d31;
+  --clr-madder-100: #21060a;
+  --clr-madder-200: #420c14;
+  --clr-madder-300: #63111e;
+  --clr-madder-400: #841728;
+  --clr-madder-500: #a71d31;
+  --clr-madder-600: #d92843;
+  --clr-madder-700: #e35e72;
+  --clr-madder-800: #ec93a1;
+  --clr-madder-900: #f6c9d0;
+  --clr-cal_poly_green-DEFAULT: #14591d;
+  --clr-cal_poly_green-100: #041106;
+  --clr-cal_poly_green-200: #08230c;
+  --clr-cal_poly_green-300: #0c3411;
+  --clr-cal_poly_green-400: #104617;
+  --clr-cal_poly_green-500: #14591d;
+  --clr-cal_poly_green-600: #239932;
+  --clr-cal_poly_green-700: #3ad24e;
+  --clr-cal_poly_green-800: #7ce189;
+  --clr-cal_poly_green-900: #bdf0c4;
+}

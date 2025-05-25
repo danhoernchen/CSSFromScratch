@@ -1,0 +1,244 @@
+@layer reset {
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Prevent font size inflation */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  /* Remove default margin in favour of better control in authored CSS */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin-block-end: 0;
+  }
+
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+
+  /* Set shorter line heights on headings and interactive elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  button,
+  input,
+  label {
+    line-height: 1.1;
+  }
+
+  /* Balance text wrapping on headings */
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+  }
+
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  /* Make sure textareas without a rows attribute are not tiny */
+  textarea:not([rows]) {
+    min-height: 10em;
+  }
+
+  /* Anything that has been anchored to should have extra scroll margin */
+  :target {
+    scroll-margin-block: 5ex;
+  }
+}
+
+@layer custom {
+  /* color palette */
+  :root {
+    --clr-caramel-100: #28180b;
+    --clr-caramel-200: #503016;
+    --clr-caramel-300: #774822;
+    --clr-caramel-400: #9f602d;
+    --clr-caramel-500: #c67838;
+    --clr-caramel-600: #d29360;
+    --clr-caramel-700: #ddae88;
+    --clr-caramel-800: #e9c9af;
+    --clr-caramel-900: #f4e4d7;
+    --clr-blue-100: #020f17;
+    --clr-blue-200: #02121b;
+    --clr-blue-300: #02141e;
+    --clr-blue-400: #031722;
+    --clr-blue-500: #031926;
+    --clr-blue-600: #1c303c;
+    --clr-blue-700: #354751;
+    --clr-blue-800: #4f5e67;
+    --clr-blue-900: #68757d;
+    --clr-greenish-100: #1a1f1b;
+    --clr-greenish-200: #333d36;
+    --clr-greenish-300: #4d5c50;
+    --clr-greenish-400: #667a6b;
+    --clr-greenish-500: #839788;
+    --clr-greenish-600: #9bab9f;
+    --clr-greenish-700: #b4c0b7;
+    --clr-greenish-800: #cdd5cf;
+    --clr-greenish-900: #e6eae7;
+    --clr-red-100: #21060a;
+    --clr-red-200: #420c14;
+    --clr-red-300: #63111e;
+    --clr-red-400: #841728;
+    --clr-red-500: #a71d31;
+    --clr-red-600: #d92843;
+    --clr-red-700: #e35e72;
+    --clr-red-800: #ec93a1;
+    --clr-red-900: #f6c9d0;
+    --clr-green-100: #041106;
+    --clr-green-200: #08230c;
+    --clr-green-300: #0c3411;
+    --clr-green-400: #104617;
+    --clr-green-500: #14591d;
+    --clr-green-600: #239932;
+    --clr-green-700: #3ad24e;
+    --clr-green-800: #7ce189;
+    --clr-green-900: #bdf0c4;
+    /* font families */
+    --ff-base: "Fira Sans", sans-serif;
+    --ff-accent: "Outfit", sans-serif;
+    /* font sizes */
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-500: 1.125rem;
+    --fs-600: 1.25rem;
+    --fs-700: 1.5rem;
+    --fs-800: 2rem;
+    --fs-900: 3.75rem;
+    --fs-1000: 3.75rem;
+    /* font sizes mobile */
+    @media (width > 760px) {
+      --fs-500: 1.25rem;
+      --fs-600: 1.5rem;
+      --fs-700: 2rem;
+      --fs-800: 3rem;
+      --fs-900: 5rem;
+      --fs-1000: 7.5rem;
+    }
+  }
+  :root {
+    /* text colors */
+    --text-base: var(--clr-greenish-600);
+    --text-high-contrast: var(--clr-greenish-900);
+    --text-brand: var(--clr-caramel-500);
+    --text-brand-light: var(--clr-caramel-700);
+    /* background colors */
+    --background-clr-extra-dark: var(--clr-blue-300);
+    --background-clr-dark: var(--clr-blue-400);
+    --background-clr-main: var(--clr-blue-500);
+    --background-clr-light: var(--clr-blue-600);
+    --background-clr-extra-light: var(--clr-blue-700);
+
+    --bg-accent-dark: var(--clr-green-400);
+    --bg-accent-main: var(--clr-green-500);
+    --bg-accent-light: var(--clr-green-600);
+
+    /* text sizes */
+    --heading-sm: var(--fs-700);
+    --heading-reg: var(--fs-800);
+    --heading-lg: var(--fs-900);
+    --heading-huge: var(--fs-1000);
+
+    --text-sm: var(--fs-300);
+    --text-reg: var(--fs-400);
+    --text-md: var(--fs-500);
+    --text-lg: var(--fs-600);
+
+    /* border radiuses */
+    --border-radius-sm: 0.25rem;
+    --border-radius-reg: 0.5rem;
+    --border-radius-lg: 0.75rem;
+  }
+}
+
+@layer base {
+  html {
+    font-family: var(--ff-base);
+    line-height: 1.6;
+  }
+
+  body {
+    font-size: var(--text-base);
+    color: var(--text-base);
+    background-color: var(--background-clr-main);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--text-high-contrast);
+  }
+
+  h1 {
+    font-size: var(--heading-lg);
+  }
+
+  a {
+    color: var(--text-high-contrast);
+  }
+
+  a:hover,
+  a:focus-visible {
+    color: var(--text-brand-light);
+  }
+}
+
+@layer utilities {
+  @layer utilities {
+    .visually-hidden {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+  }
+}
