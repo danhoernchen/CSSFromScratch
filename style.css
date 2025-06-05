@@ -433,6 +433,10 @@
     color: var(--text-high-contrast);
     background-image: url("./assets/hero_bg.webp");
     background-size: cover;
+
+    animation: fade-out forwards;
+    animation-timeline: view();
+    animation-range-start: exit 40%;
   }
   .hero-title {
     font-size: var(--heading-lg);
@@ -740,9 +744,4 @@
   to {
     opacity: 0;
   }
-}
-.hero {
-  animation: fade-out forwards;
-  animation-timeline: view();
-  animation-range-start: exit 40%;
 }
