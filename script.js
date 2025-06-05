@@ -9,3 +9,12 @@ navToggle.addEventListener("click", () => {
     navToggle.setAttribute("aria-expanded", "true");
   }
 });
+
+const resizeObserver = new ResizeObserver((entries) => {
+  document.body.classList.add("no-animation");
+  requestAnimationFrame(() => {
+    document.body.classList.remove("no-animation");
+  });
+});
+
+resizeObserver.observe(document.body);
