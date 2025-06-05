@@ -744,5 +744,5 @@
 .hero {
   animation: fade-out forwards;
   animation-timeline: view();
-  animation-range-start: exit;
+  animation-range-start: exit 40%;
 }
